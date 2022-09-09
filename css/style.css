@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(246, 247, 247);
+}
+div{
+    padding: 50px 20px;
+    display: block;
+    width: 40%;
+  
+    margin: 50px auto;
+    background: rgba(213, 246, 235, 0.463);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   
+}
+div input,
+div textarea,
+div button,
+div button{
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    border: 0;
+    outline: 0;
+    padding: 12px;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+div input{
+    padding: 12px ;
+}
+div button{
+    width: 120px;
+    padding: 12px 15px;
+    cursor: pointer;
+    background: rgba(255, 254, 251, 0.992);
+    font-size: 18px;
+    position: relative;
+}
+button::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 100%;
+    transition: .3s;
+    background: rgb(73, 255, 194);
+    color: black;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+button:hover:after{
+    width: 100%;
+    color: black;
+    z-index: -1;
+}
